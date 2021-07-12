@@ -1,13 +1,14 @@
 let screen = document.getElementById("screen-result");
 
+function clear() {
+    screen.value = '';
+}
+
 function getData(ref) {
     let value = ref.value;
     screen.value += value;
 }
 
-function clear() {
-    screen.value = '';
-}
 
 function calculate() {
     try {
